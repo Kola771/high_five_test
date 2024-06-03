@@ -5,8 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HighFive Test</title>
+    <style>
+        form {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    </style>
 </head>
 <body>
-    
+    <form action="/h5_test/vitesse.php" method="POST">
+        <input type="text" name="nombre" placeholder="Entrez le nombre total de mesure">
+        <textarea name="mesure" id="" cols="30" rows="2" placeholder="Entrez les différentes mesures séparées d'un espace"></textarea>
+        <button>Calculer</button>
+    </form>
 </body>
 </html>
